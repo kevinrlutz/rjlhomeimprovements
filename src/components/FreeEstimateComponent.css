@@ -1,0 +1,32 @@
+.free-estimate-component {
+    color: var(--rjl-green);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    position:static;
+    right: 0;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.free-estimate-component:hover {
+    background-color: var(--rjl-yellow);
+}
+
+.free-estimate-component a {
+    color: #fff ;
+}
+
+.free-estimate-component a::after {
+    color: #fff;
+}
+
+@media screen and (max-width: 1360px) { 
+    .free-estimate-component {
+        visibility: hidden;
+        display: inline-block;
+        height: 0;
+        padding: 0;
+    }
+}

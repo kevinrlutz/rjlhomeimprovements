@@ -1,0 +1,15 @@
+.about-container {
+    background: url('../../images/worksite.png');
+    width: 100%;
+    margin: 0;
+    height: 35em;
+    background-size: 100% 35em;
+}
+
+@media screen and (max-width: 1360px) {
+    .about-container {
+        background-size: cover;
+        background-position: center;
+        height: 36.5em;
+    }
+}

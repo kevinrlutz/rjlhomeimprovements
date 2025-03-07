@@ -1,0 +1,55 @@
+.desktop-nav-container {
+    display: block;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 4.5em;
+}
+
+.mobile-nav-container {
+    display: block;
+    margin: 0;
+}
+
+.mobile-nav-container a {
+    margin-right: 0;
+    border: none;
+    padding: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.centered {
+    text-align: center;
+}
+
+.mobile-nav-arrow {
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .desktop-nav-container {
+        display: none;
+    }
+
+    .mobile-nav-container {
+        margin-top: 1em;
+        line-height: 1em;
+    }
+
+    .mobile-nav-container a {
+        line-height: 1.35em;
+    }
+
+    .mobile-nav-arrow {
+        margin: auto;
+        margin-top: .5em;
+        display: block;
+        color: var(--rjl-green);
+        font-size: 1.5em;
+        text-align: center;
+        cursor: pointer;
+    }
+}

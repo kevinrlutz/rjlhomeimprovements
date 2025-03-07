@@ -1,0 +1,86 @@
+/*
+COLORS:
+
+dark green: #395E41
+yellow: #DCC446
+
+*/
+
+:root {
+  --rjl-yellow: #DCC446;
+  --rjl-green: #395E41;
+  --body-color: #222;
+  --bg-color: #fff;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+   background-color: var(--bg-color);
+   font-family: Verdana, Helvetica, sans-serif !important;
+   color: var(--body-color);
+}
+
+.App-header {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  color: var(--rjl-green);
+}
+
+.sticky-title {
+  text-align: center;
+  letter-spacing: .25em;
+  color: var(--rjl-green);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  margin-top: 0;
+  background-color: var(--rjl-yellow);
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-top: 1.5em;
+  color: var(--rjl-green);
+}
+
+.side-margins {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--rjl-yellow);
+}
+
+NavContainer {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  .App-header {
+    display: block;
+    margin-bottom: -4em;
+  }
+
+  .side-margins {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .sticky-title {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .left-align-mobile {
+    text-align: left !important;
+  }
+}
