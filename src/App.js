@@ -9,6 +9,7 @@ import NavContainer from './components/containers/NavContainer';
 import ProjectsContainer from './components/containers/ProjectsContainer';
 
 import React, { Component } from 'react'
+import PromoContainer from './components/containers/PromoContainer';
 
 export default class App extends Component {
   constructor(props) {
@@ -26,6 +27,7 @@ export default class App extends Component {
           <FreeEstimateComponent />
         </header>
         <AboutContainer/>
+        <PromoContainer />
         <div id="projects"></div>
         <SectionTitle sectionName="Project Gallery" />
         <ProjectsContainer />
