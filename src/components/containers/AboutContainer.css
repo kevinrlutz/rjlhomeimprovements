@@ -13,3 +13,10 @@
         height: 36.5em;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .about-container {
+        background: none;
+        height: max-content
+    }
+}
