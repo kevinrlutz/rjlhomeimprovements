@@ -5,12 +5,3 @@
 .promo-container {
     margin-top: 2em;
 }
-
-.image-gallery-photo {
-    width: 20em;
-    margin: .2em;
-}
-
-.image-gallery-photo:hover {
-    transform: scale(1.2);
-}
