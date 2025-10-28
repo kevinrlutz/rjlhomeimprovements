@@ -1,0 +1,22 @@
+.centered {
+    text-align: center;
+}
+
+.testimonials-container {
+    margin-top: 2em;
+}
+
+.testimonials-container p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-style: italic;
+    margin-bottom: .5em;
+}
+
+@media screen and (max-width: 1280px) {
+    .testimonials-container p {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+    }
+}

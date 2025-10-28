@@ -7,9 +7,9 @@ import AboutContainer from './components/containers/AboutContainer';
 import ContactContainer from './components/containers/ContactContainer';
 import NavContainer from './components/containers/NavContainer';
 import ProjectsContainer from './components/containers/ProjectsContainer';
+import TestimonialsContainer from './components/containers/TestimonialsContainer';
 
 import React, { Component } from 'react'
-import PromoContainer from './components/containers/PromoContainer';
 
 export default class App extends Component {
   constructor(props) {
@@ -27,10 +27,12 @@ export default class App extends Component {
           <FreeEstimateComponent />
         </header>
         <AboutContainer/>
-        <PromoContainer />
         <div id="projects"></div>
         <SectionTitle sectionName="Project Gallery" />
         <ProjectsContainer />
+        <div id='testimonials'></div>
+        <SectionTitle sectionName="Testimonials" />
+        <TestimonialsContainer />
         <div id='contact'></div>
         <SectionTitle sectionName="Contact Us" />
         <ContactContainer />

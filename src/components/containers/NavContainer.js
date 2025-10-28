@@ -31,13 +31,13 @@ export default class NavContainer extends Component {
     return (
       <div>
         <div className='desktop-nav-container'>
-          <NavLink linkTitle="ABOUT" linkRef="#"/>&nbsp;
           <NavLink linkTitle="GALLERY" linkRef="#projects" />&nbsp;
+          <NavLink linkTitle="TESTIMONIALS" linkRef="#testimonials" />&nbsp;
           <NavLink linkTitle="CONTACT" linkRef="#contact" />
         </div>
         <div className={this.state.showMobileNav ? 'mobile-nav-container centered' : 'hidden'}>
-          <NavLink linkTitle="ABOUT" linkRef="#"/><br />
           <NavLink linkTitle="GALLERY" linkRef="#projects" /><br />
+          <NavLink linkTitle="TESTIMONIALS" linkRef="#testimonials"/><br />
           <NavLink linkTitle="CONTACT" linkRef="#contact" />
         </div>
         <div className='mobile-nav-arrow' onClick={this.toggleMobileNav}>{this.state.navArrow}</div>
