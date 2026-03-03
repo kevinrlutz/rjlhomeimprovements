@@ -2,10 +2,6 @@ import React from 'react'
 import './FooterComponent.css'
 
 export default function FooterComponent() {
-  const getCurrentYear = () => {
-    const currentDate = new Date()
-    return currentDate.getFullYear()
-  }
   return (
     <div className='footer-component'>
       <p>
@@ -14,7 +10,7 @@ export default function FooterComponent() {
           <a href="http://kevinlutz.me/">Kevin Lutz</a>
         </strong>
       </p>
-      <p>&copy; {getCurrentYear()}</p>
+      <p>&copy; {new Date().getFullYear()}</p>
     </div>
   )
 }

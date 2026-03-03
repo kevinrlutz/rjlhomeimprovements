@@ -23,10 +23,9 @@ export default class App extends Component {
         <h1 className='sticky-title'>Robert J Lutz Home Improvements</h1>
         <div className="marquee-wrapper">
           <div className="marquee-track">
-            <span>Kitchens | Bathrooms | Additions | Remodels | Roofing | Flooring</span>
-            <span>Kitchens | Bathrooms | Additions | Remodels | Roofing | Flooring</span>
-            <span>Kitchens | Bathrooms | Additions | Remodels | Roofing | Flooring</span>
-            <span>Kitchens | Bathrooms | Additions | Remodels | Roofing | Flooring</span>
+            <span aria-hidden="true">Kitchens | Bathrooms | Additions | Remodels | Decks | Windows | Doors | Basements | Roofing | Flooring | Custom Builds</span>
+            <span aria-hidden="true">Kitchens | Bathrooms | Additions | Remodels | Decks | Windows | Doors | Basements | Roofing | Flooring | Custom Builds</span>
+            <span aria-hidden="true">Kitchens | Bathrooms | Additions | Remodels | Decks | Windows | Doors | Basements | Roofing | Flooring | Custom Builds</span>
           </div>
         </div>
         <header className="App-header">
