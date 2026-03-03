@@ -25,6 +25,33 @@ html, body {
    color: var(--body-color);
 }
 
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--rjl-green);
+  color: var(--rjl-yellow);
+  padding: 0.4em 0;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: inline-block;
+  animation: marquee-scroll 20s linear infinite;
+}
+
+.marquee-track span {
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding-right: 2em;
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
+}
+
 .App-header {
   background-color: var(--bg-color);
   display: flex;

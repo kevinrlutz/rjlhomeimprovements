@@ -21,6 +21,14 @@ export default class App extends Component {
     return (
       <div className="App">
         <h1 className='sticky-title'>Robert J Lutz Home Improvements</h1>
+        <div className="marquee-wrapper">
+          <div className="marquee-track">
+            <span>Kitchens | Bathrooms | Additions | Remodels | Roofing | Flooring</span>
+            <span>Kitchens | Bathrooms | Additions | Remodels | Roofing | Flooring</span>
+            <span>Kitchens | Bathrooms | Additions | Remodels | Roofing | Flooring</span>
+            <span>Kitchens | Bathrooms | Additions | Remodels | Roofing | Flooring</span>
+          </div>
+        </div>
         <header className="App-header">
           <TitleComponent/>
           <NavContainer/>
