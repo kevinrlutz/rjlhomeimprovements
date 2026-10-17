@@ -1,20 +1,18 @@
+.nav-container {
+    flex: 1;
+}
+
 .desktop-nav-container {
-    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
     margin: 0;
-    text-align: center;
     width: 100%;
-    margin-top: 4.5em;
 }
 
 .mobile-nav-container {
     display: block;
     margin: 0;
-}
-
-.mobile-nav-container a {
-    margin-right: 0;
-    border: none;
-    padding: none;
 }
 
 .hidden {
@@ -35,21 +33,21 @@
     }
 
     .mobile-nav-container {
-        margin-top: 1em;
-        line-height: 1em;
+        padding-bottom: .5em;
     }
 
-    .mobile-nav-container a {
-        line-height: 1.35em;
+    .mobile-nav-container .nav-link {
+        display: block;
+        padding: .6em 0;
     }
 
     .mobile-nav-arrow {
-        margin: auto;
-        margin-top: .5em;
+        margin: .25em auto .75em;
         display: block;
+        background: none;
+        border: none;
+        padding: .25em .5em;
         color: var(--rjl-green);
-        font-size: 1.5em;
-        text-align: center;
         cursor: pointer;
     }
 }

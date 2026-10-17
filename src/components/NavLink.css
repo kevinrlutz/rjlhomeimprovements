@@ -1,26 +1,19 @@
 .nav-link {
     color: var(--rjl-green);
-    font-weight: bold;
-    margin: auto;
-    text-decoration: none;
-    padding-left: .1em;
-    padding-right: .1em;
-    margin-left: .9em;
-    margin-right: .9em;
-    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: .08em;
+    font-size: 1.05rem;
+    padding: .3em 0;
+    border-bottom: 3px solid transparent;
+    transition: border-color .2s;
 }
 
 .nav-link:hover {
-    background-color: var(--rjl-yellow);
+    border-bottom-color: var(--rjl-yellow);
 }
 
 @media screen and (max-width: 1280px) {
     .nav-link:hover {
-        background: none;
-    }
-
-    .nav-link {
-        margin: 0 0 0 0;
-        background: none;
+        border-bottom-color: transparent;
     }
 }

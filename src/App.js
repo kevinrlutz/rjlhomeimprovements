@@ -3,6 +3,8 @@ import FooterComponent from './components/FooterComponent';
 import FreeEstimateComponent from './components/FreeEstimateComponent';
 import SectionTitle from './components/SectionTitle';
 import TitleComponent from './components/TitleComponent';
+import WelcomeComponent from './components/WelcomeComponent';
+import ServicesStrip from './components/ServicesStrip';
 import AboutContainer from './components/containers/AboutContainer';
 import ContactContainer from './components/containers/ContactContainer';
 import NavContainer from './components/containers/NavContainer';
@@ -21,18 +23,13 @@ export default class App extends Component {
     return (
       <div className="App">
         <h1 className='sticky-title'>Robert J Lutz Home Improvements</h1>
-        <div className="marquee-wrapper">
-          <div className="marquee-track">
-            <span aria-hidden="true">Kitchens | Bathrooms | Additions | Remodels | Decks | Windows | Doors | Basements | Roofing | Flooring | Custom Builds</span>
-            <span aria-hidden="true">Kitchens | Bathrooms | Additions | Remodels | Decks | Windows | Doors | Basements | Roofing | Flooring | Custom Builds</span>
-            <span aria-hidden="true">Kitchens | Bathrooms | Additions | Remodels | Decks | Windows | Doors | Basements | Roofing | Flooring | Custom Builds</span>
-          </div>
-        </div>
         <header className="App-header">
           <TitleComponent/>
           <NavContainer/>
           <FreeEstimateComponent />
         </header>
+        <WelcomeComponent />
+        <ServicesStrip />
         <AboutContainer/>
         <div id="projects"></div>
         <SectionTitle sectionName="Project Gallery" />

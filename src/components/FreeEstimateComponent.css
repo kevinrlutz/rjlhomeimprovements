@@ -1,32 +1,36 @@
 .free-estimate-component {
-    color: var(--rjl-green);
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    position:static;
-    right: 0;
-    padding-top: 1.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    gap: .8em;
+    margin: 0 2em 0 1em;
+    padding: .7em 1.3em;
+    border-radius: 8px;
+    background-color: var(--rjl-green);
+    color: var(--bg-color);
+    transition: background-color .2s;
 }
 
 .free-estimate-component:hover {
-    background-color: var(--rjl-yellow);
+    background-color: var(--rjl-green-dark);
 }
 
-.free-estimate-component a {
-    color: #fff ;
+.free-estimate-component svg {
+    color: var(--rjl-yellow);
 }
 
-.free-estimate-component a::after {
-    color: #fff;
+.estimate-label {
+    font-size: .75rem;
+    letter-spacing: .06em;
 }
 
-@media screen and (max-width: 1360px) { 
+.estimate-number {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--rjl-yellow);
+}
+
+@media screen and (max-width: 1360px) {
     .free-estimate-component {
-        visibility: hidden;
-        display: inline-block;
-        height: 0;
-        padding: 0;
+        display: none;
     }
 }
