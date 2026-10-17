@@ -1,22 +1,27 @@
 .about-container {
-    background: url('../../images/worksite.png');
-    width: 100%;
-    margin: 0;
-    height: 35em;
-    background-size: 100% 35em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3em;
+    padding: 4em 0 1em;
+    font-size: 1.1rem;
 }
 
-@media screen and (max-width: 1360px) {
-    .about-container {
-        background-size: cover;
-        background-position: center;
-        height: 36.5em;
-    }
+.about-container p {
+    margin: 0;
+}
+
+.about-container img {
+    width: 100%;
+    border-radius: 8px;
+    border: 6px solid #fff;
+    box-shadow: 0 4px 14px rgba(60, 50, 20, 0.2);
 }
 
 @media screen and (max-width: 900px) {
     .about-container {
-        background: none;
-        height: max-content
+        grid-template-columns: 1fr;
+        gap: 2em;
+        padding-top: 2.5em;
     }
 }

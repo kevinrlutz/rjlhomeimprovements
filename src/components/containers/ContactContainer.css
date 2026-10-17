@@ -1,38 +1,63 @@
-.centered {
-    text-align: center;
-}
-
 .contact-container {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2.5em 1.5em;
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
     font-size: 1.1em;
-    color: var(--body-color);
+    background-color: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(60, 50, 20, 0.08);
 }
 
-.contact-container a {
-    font-weight: bold;
-    color: var(--rjl-yellow);
-    font-size: 2em;
-    text-decoration: none;
-    text-shadow: 1px 1px 0 #000;
+.contact-container p {
+    margin-top: 0;
 }
 
-@media screen and (max-width: 1280px) {
-    .contact-container {
-        margin-left: 12%;
-        margin-right: 12%;
-    }
+.contact-list {
+    list-style: none;
+    margin: 1.5em 0 2em;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6em;
+    color: var(--rjl-green);
+}
+
+.contact-list a {
+    font-weight: 700;
+    font-size: 1.5em;
+    word-break: break-word;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--rjl-yellow);
+    text-decoration-thickness: 3px;
+}
+
+.btn-facebook {
+    background-color: var(--rjl-green);
+    color: var(--bg-color);
+}
+
+.btn-facebook:hover {
+    background-color: var(--rjl-green-dark);
 }
 
 @media screen and (max-width: 960px) {
     .contact-container {
-        margin-left: 5% !important;
-        margin-right: 5% !important;
+        margin: 0 5%;
     }
-    .contact-container a {
-        font-weight: bold;
-        color: var(--rjl-yellow);
+
+    .contact-list a {
         font-size: 1.1em;
     }
 }

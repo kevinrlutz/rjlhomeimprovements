@@ -9,71 +9,56 @@ yellow: #DCC446
 :root {
   --rjl-yellow: #DCC446;
   --rjl-green: #395E41;
-  --body-color: #222;
-  --bg-color: #fff;
+  --rjl-green-dark: #2A4631;
+  --body-color: #2b2a26;
+  --bg-color: #FAF6EC;
+  --sand: #F0E9D8;
+  --line: #E2D9C3;
 }
 
 html, body {
   scroll-behavior: smooth;
+  scroll-padding-top: 4em;
   height: 100%;
   width: 100%;
 }
 
 .App {
    background-color: var(--bg-color);
-   font-family: Verdana, Helvetica, sans-serif !important;
+   font-family: 'Open Sans', Verdana, Helvetica, sans-serif !important;
    color: var(--body-color);
-}
-
-.marquee-wrapper {
-  width: 100%;
-  overflow: hidden;
-  background-color: var(--rjl-green);
-  color: var(--rjl-yellow);
-  padding: 0.4em 0;
-  white-space: nowrap;
-}
-
-.marquee-track {
-  display: inline-block;
-  animation: marquee-scroll 30s linear infinite;
-}
-
-.marquee-track span {
-  display: inline-block;
-  font-size: 1.1em;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  padding-right: 2em;
-}
-
-@keyframes marquee-scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-33.33%); }
+   line-height: 1.65;
 }
 
 .App-header {
   background-color: var(--bg-color);
   display: flex;
+  align-items: center;
   justify-content: space-between;
   color: var(--rjl-green);
+  border-bottom: 1px solid var(--line);
 }
 
 .sticky-title {
   text-align: center;
-  letter-spacing: .25em;
-  color: var(--rjl-green);
+  letter-spacing: .15em;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--bg-color);
   position: sticky;
   top: 0;
   z-index: 9999;
   margin-top: 0;
-  background-color: var(--rjl-yellow);
+  padding: .6em 0;
+  background-color: var(--rjl-green);
+  border-bottom: 4px solid var(--rjl-yellow);
   margin-bottom: 0;
 }
 
 h2 {
-  font-size: 2.5em;
-  margin-top: 1.5em;
+  font-size: 2.1em;
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--rjl-green);
 }
 
@@ -84,17 +69,42 @@ h2 {
 
 a {
   text-decoration: none;
-  color: var(--rjl-yellow);
+  color: var(--rjl-green);
 }
 
-NavContainer {
-  flex-grow: 1;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5em;
+  padding: .8em 1.5em;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  transition: background-color .2s, color .2s, border-color .2s;
+}
+
+.btn-primary {
+  background-color: var(--rjl-yellow);
+  color: var(--rjl-green-dark);
+}
+
+.btn-primary:hover {
+  background-color: #e8d466;
+}
+
+.btn-secondary {
+  color: #fff;
+  border-color: rgba(255, 255, 255, .7);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, .15);
 }
 
 @media screen and (max-width: 1280px) {
   .App-header {
     display: block;
-    margin-bottom: -4em;
   }
 
   .side-margins {
@@ -104,6 +114,10 @@ NavContainer {
 
   .sticky-title {
     display: none;
+  }
+
+  html, body {
+    scroll-padding-top: 0;
   }
 }
 @media screen and (max-width: 650px) {
